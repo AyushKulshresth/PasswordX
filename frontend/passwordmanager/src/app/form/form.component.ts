@@ -47,10 +47,10 @@ export class FormComponent {
 
     console.log(pass);
     this.PassForm.setValue({
-      website: '',
+      website: this.PassForm.value.website?this.PassForm.value.website:'',
       password: pass
     });
-    var password = document.getElementById('password');
-    password?.setAttribute('value', 'pass');
+    // var password = document.getElementById('password');
+    // password?.setAttribute('value', 'pass');
   }
 }
