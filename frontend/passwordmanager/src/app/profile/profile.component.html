@@ -1,0 +1,25 @@
+<main>
+    <nav class="navbar">
+        <div class="nav">
+            <mat-icon class="buttons">verified_user</mat-icon>
+            <h1 style="margin-bottom: 0px; font-weight: 600;" >PasswordX</h1>
+        </div>
+        <ul class="nav">
+            <li class="buttons">
+            <button mat-stroked-button color="primary" id="dashboard" [routerLink]="['/dashboard']">Dashboard</button>
+            </li>
+            <li class="buttons">
+            <button mat-raised-button color="primary" id="logout" (click)="logout()" [routerLink]="['']">LogOut</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="info">
+        <div>
+            <h1>Welcome {{User.name}}</h1>
+            <h2>Username: {{User.user}}</h2>
+            <h2>Email: {{User.email}}</h2>
+            <button mat-raised-button color="warn" id="delete" (click)="deleteAccount()" [routerLink]="['']">Delete Account</button>
+        </div>
+        <img src="../../assets/images/user.avif" alt="" width="500">
+    </section>
+</main>

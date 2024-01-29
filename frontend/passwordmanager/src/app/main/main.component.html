@@ -1,0 +1,76 @@
+<main>
+    <nav class="navbar">
+      <div class="nav">
+        <mat-icon class="buttons">verified_user</mat-icon>
+        <h1 style="margin-bottom: 0px; font-weight: 600;" >PasswordX</h1>
+      </div>
+      <ul class="nav">
+        <li class="buttons">
+          <button mat-stroked-button color="primary" id="login" [routerLink]="['login']">Login</button>
+        </li>
+        <li class="buttons">
+          <button mat-raised-button color="primary" id="signup" [routerLink]="['signup']">Sign Up</button>
+        </li>
+      </ul>
+    </nav>
+    <section class="head">
+      <div class="head-contents">
+        <h1>Welcome To PasswordX!</h1>
+        <p>
+          The application will allow users to generate, save, display password strength, update passwords, 
+          and authenticate securely. It a secure and user-friendly tool for managing and safeguarding passwords.
+        </p>
+      </div>
+      <div class="head-contents">
+        <img src="../assets/images/main_image.avif" alt="" width="600" height="400" id="main_img">
+      </div>
+    </section>
+    <h1 id="features">Features</h1>
+    <section class="features">
+      <div>
+        <span>
+          <mat-icon class="icons">lock</mat-icon>
+          <h2 style="margin: 0px 10px; font-size: x-large;">Secure Password Retrival</h2>
+        </span>
+        <p>Users shall be able to save passwords securely.
+          The system shall store passwords in the SQLite database in an encrypted format.
+            Users shall be able to retrieve saved passwords.
+        </p>
+      </div>
+      <div>
+        <span>
+          <mat-icon class="icons">vpn_key</mat-icon>
+          <h2 style="margin: 0px 10px; font-size: x-large;">Password Generation Functionality</h2>
+        </span>
+        <p>Users shall be able to generate secure passwords with length as a customizable parameter.
+          The generated passwords shall meet industry-standard security guidelines.
+        </p>
+      </div>
+      <div>
+        <span>
+          <mat-icon class="icons">bar_chart</mat-icon>
+          <h2 style="margin:0px 10px; font-size: x-large;">Password Strength Assesment</h2>
+        </span>
+        <p>The system shall assess the strength of passwords based on complexity, length, and other relevant factors.
+          Users shall be provided feedback on the strength of their passwords.
+        </p>
+      </div>
+    </section>
+    <section class="head" style="margin-bottom: 50px;">
+      <div class="head-contents">
+        <img src="../assets/images/about_img.avif" alt="" width="400" height="400" id="main_img">
+      </div>
+      <div class="head-contents">
+        <h1>About Us!</h1>
+        <p>
+          Welcome to PasswordX, where your digital security is our top priority. At PasswordX, we understand 
+          the paramount importance of safeguarding your online presence, and that's why we've crafted a cutting-edge 
+          password manager web app to empower you in managing your digital credentials securely.
+        </p>
+        <button mat-raised-button color="accent" id="contact" (click)="Contact_Info()">Contact Us!</button>
+      </div>
+    </section>
+    <footer>
+      <p>&#169; Copyright 2024</p>
+    </footer>
+  </main>

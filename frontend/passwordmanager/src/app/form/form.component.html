@@ -1,0 +1,23 @@
+<main>
+    <form [formGroup] = "PassForm">
+        <ul class="form-container">
+            <h1 style="font-weight: 500;">Enter Passord Details!</h1>
+            <li>
+                <mat-form-field appearance="outline" class="form_field">
+                    <mat-label>Website</mat-label>
+                    <input matInput placeholder="Enter Website Here" formControlName="website">
+                </mat-form-field>
+            </li>
+            <li>
+                <mat-form-field appearance="outline" class="form_field">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Enter Password Here" formControlName="password" id="password">
+                </mat-form-field>
+            </li>
+            <li>
+                <button mat-raised-button color="primary" class="form_field" id="login" (click)="addPass()">Add Password</button>
+                <button mat-raised-button color="accent" class="form_field" (click)="generatePass()">Generate Password</button>
+            </li>
+        </ul>
+    </form>
+</main>

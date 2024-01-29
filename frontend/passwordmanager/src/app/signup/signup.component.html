@@ -1,0 +1,47 @@
+<main>
+    <section class="container">
+        <div class="form_container">
+            <h1>Sign Up Here!</h1>
+            <form [formGroup]="signupForm" (ngSubmit)="signupSubmit()">
+                <ul class="form">
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Name</mat-label>
+                            <input matInput placeholder="Enter Name Here" formControlName="name" required>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Username</mat-label>
+                            <input matInput placeholder="Enter Username Here" formControlName="user" required>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput placeholder="Enter Email Here" formControlName="email" required> 
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Password</mat-label>
+                            <input type="password" matInput placeholder="Enter Password Here" formControlName="password" required>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Confirm Password</mat-label>
+                            <input type="password" matInput placeholder="Confirm Password Here" formControlName="cpassword" required>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button mat-raised-button color="primary" class="form_field" id="signup">Sign Up!</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="img_container">
+            <img src="../../assets/images/signup.avif" alt="" width="450" heigth="450">
+        </div>
+    </section>
+</main>

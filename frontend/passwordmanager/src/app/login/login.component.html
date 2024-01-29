@@ -1,0 +1,29 @@
+<main>
+    <section class="container">
+        <div id="img_container">
+            <img src="../../assets/images/login2.avif" alt="" width="450" heigth="450">
+        </div>
+        <div class="form_container">
+            <h1>Login To Your World of Secrecy!</h1>
+            <form [formGroup] = "loginForm" (ngSubmit)="loginUser()">
+                <ul class="form">
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>UserName</mat-label>
+                            <input matInput placeholder="Enter Username Here" formControlName="user">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Password</mat-label>
+                            <input type="password" matInput placeholder="Enter Password Here" formControlName="password">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button mat-raised-button color="primary" class="form_field" id="login">Login</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,47 @@
+<main>
+    <nav class="navbar">
+        <div class="nav">
+            <mat-icon class="buttons">verified_user</mat-icon>
+            <h1 style="margin-bottom: 0px; font-weight: 600;" >PasswordX</h1>
+        </div>
+        <ul class="nav">
+            <li class="buttons">
+            <button mat-stroked-button color="primary" id="login" [routerLink]="['/profile']">Profile</button>
+            </li>
+            <li class="buttons">
+            <button mat-raised-button color="primary" id="signup" (click)="logout()">LogOut</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div id="form">
+            <app-form></app-form>   
+        </div>
+        <div *ngIf="this.services.flag" class="hello">
+            <form [formGroup] = "EditForm">
+                <ul class="form-container">
+                    <h1 style="font-weight: 500;">Enter Passord Details!</h1>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Website</mat-label>
+                            <input matInput placeholder="{{this.services.Password.website}}" formControlName="website">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field appearance="outline" class="form_field">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="{{this.services.Password.password}}" formControlName="password">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button mat-raised-button color="primary" class="form_field" style="color: white;" (click)="EditPass()">Edit Password</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <img src="../../assets/images/forgot-password_442409-1785.jpg" alt="" width="400" height="400">
+    </section>
+    <section id="table">
+        <app-table></app-table>
+    </section>
+</main>

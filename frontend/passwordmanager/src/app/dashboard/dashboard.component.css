@@ -1,0 +1,95 @@
+#form{
+    background-color: #BDE0FE;
+    border: 2px solid black;
+    /* border-radius: 5%; */
+    width:40%;
+}
+
+ul{
+    list-style: None;
+    
+}
+
+.hello{
+    background-color: #BDE0FE;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    background-color: #BDE0FE;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#graph{
+    background-color: #BDE0FE;
+    border: 2px solid black;
+    /* border-radius: 10%; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#table{
+    background-color: #BDE0FE;
+    width: 90%;
+    margin: 50px;
+    border: 2px solid black;
+}
+
+main{
+    background-color: #FFC8DD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFC8DD;
+    border-bottom: 0px;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#login{
+    border-color: black;
+    border-width: 1.5px;
+    font-weight: 900;
+    color: black;
+    margin-right: 15px;
+}
+
+#signup{
+    border:1.5px solid black;
+    color: black;
+    background-color: #FFAFCC;
+}
+
